@@ -9,11 +9,11 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #e7f0fa;
             color: #333;
         }
         header {
-            background-color: #4CAF50;
+            background-color: #3366cc;
             color: white;
             padding: 1rem;
             text-align: center;
@@ -22,7 +22,7 @@
             display: flex;
             justify-content: center;
             gap: 2rem;
-            background-color: #4CAF50;
+            background-color: #3366cc;
             padding: 0.5rem;
         }
         nav a {
@@ -34,10 +34,22 @@
             padding: 2rem;
             text-align: center;
         }
+        #intro img {
+            max-width: 150px;
+            border-radius: 50%;
+            border: 2px solid #3366cc;
+            margin: 1rem auto;
+        }
+        #cv iframe {
+            width: 80%;
+            height: 800px;
+            border: none;
+            margin-top: 1rem;
+        }
         footer {
             text-align: center;
             padding: 1rem;
-            background-color: #4CAF50;
+            background-color: #3366cc;
             color: white;
         }
     </style>
@@ -47,17 +59,27 @@
         <h1>Welcome to Austin Green's Portfolio</h1>
     </header>
     <nav>
-        <a href="cv.html">CV</a>
-        <a href="projects.html">Projects</a>
+        <a href="#intro">About Me</a>
+        <a href="#cv">CV</a>
+        <a href="#footer">Contact</a>
     </nav>
-    <section>
+    <section id="intro">
+        <img src="headshot.jpg" alt="Austin Green">
         <h2>Hello! I'm Austin Green</h2>
         <p>PharmD, MPH, BCPS, AAHIVP</p>
-        <p>Passionate about healthtech innovation, data science, and advancing patient care through technology.</p>
-        <p>Explore my professional journey, my academic achievements, and the projects I've been working on!</p>
+        <p>Passionate about healthcare innovation, data science, and advancing patient care through technology.</p>
+        <p>Explore my professional journey, academic achievements, and projects I've been working on!</p>
     </section>
-    <footer>
+    <section id="cv">
+        <h2>Curriculum Vitae</h2>
+        <p>Download my CV: <a href="Green_Austin_CV.pdf" download>Green_Austin_CV.pdf</a></p>
+        <iframe src="Green_Austin_CV.pdf"></iframe>
+    </section>
+    <footer id="footer">
         <p>&copy; 2025 Austin Green. All rights reserved.</p>
+    </footer>
+</body>
+</html>
     </footer>
 </body>
 </html>
