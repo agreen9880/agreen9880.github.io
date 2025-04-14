@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Austin Green's Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -17,7 +18,7 @@
         header {
             background-color: #3366cc;
             color: white;
-            padding: 1rem;
+            padding: 1.5rem;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
@@ -26,7 +27,7 @@
             justify-content: center;
             gap: 2rem;
             background-color: #3366cc;
-            padding: 0.5rem;
+            padding: 0.8rem;
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -54,6 +55,10 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-bottom: 2rem;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: scale(1.02);
         }
         #intro img {
             max-width: 150px;
@@ -72,6 +77,33 @@
             margin-top: 1rem;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .contact-links a {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 10px;
+            background-color: #ffcc00;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out;
+        }
+        .contact-links a:hover {
+            background-color: #ff9900;
+            color: white;
+        }
+        .social-icons {
+            font-size: 24px;
+            margin-top: 1rem;
+        }
+        .social-icons a {
+            color: #3366cc;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #ffcc00;
         }
         footer {
             text-align: center;
@@ -102,22 +134,34 @@
     <nav>
         <a href="#intro">About Me</a>
         <a href="#cv">CV</a>
-        <a href="#footer">Contact</a>
+        <a href="#contact">Contact</a>
     </nav>
     <section id="intro" class="card">
         <img src="headshot.jpg" alt="Austin Green">
         <h2>About Me</h2>
-        <p>Hello! I'm Austin Green, PharmD, MPH, BCPS, AAHIVP, a visionary healthcare professional with a strong commitment to transforming healthcare through technology and innovation.</p>
-        <p>With a multidisciplinary background in pharmacy, public health, and data science, I bring a unique perspective to tackling systemic challenges in healthcare. I specialize in healthtech innovation, leveraging artificial intelligence and machine learning to enhance patient outcomes while ensuring ethical integration into existing systems.</p>
-        <p>Currently, I am pursuing advanced certifications and education to further solidify my knowledge in healthtech and AI/ML strategy. My long-term vision includes leading a healthtech startup that focuses on improving healthcare accessibility and efficiency for all.</p>
-        <p>Beyond my professional pursuits, I am an advocate for education and leadership development, having contributed to academic presentations, publications, and mentorship in the field. Explore my CV and projects to learn more about my journey and impact.</p>
+        <p>Hello! I'm Austin Green, PharmD, MPH, BCPS, AAHIVP, a healthcare professional passionate about leveraging technology to enhance patient outcomes and drive innovation.</p>
+        <p>With a multidisciplinary background in pharmacy, public health, and data science, I tackle systemic healthcare challenges through AI, analytics, and strategic decision-making.</p>
+        <p>My goal is to lead a healthtech startup focused on accessibility and efficiency in patient care.</p>
+        <p>Explore my CV and projects to learn more about my contributions to the field!</p>
     </section>
     <section id="cv" class="card">
         <h2>Curriculum Vitae</h2>
         <p>Download my CV: <a href="Green_Austin_CV.pdf" download>Green_Austin_CV.pdf</a></p>
         <iframe src="Green_Austin_CV.pdf"></iframe>
     </section>
-    <footer id="footer">
+    <section id="contact" class="card">
+        <h2>Contact</h2>
+        <p>Let's connect! Feel free to reach out via email or LinkedIn.</p>
+        <div class="contact-links">
+            <a href="mailto:agreen9880@gmail.com">Email Me</a>
+            <a href="https://www.linkedin.com/in/austinlgreen/" target="_blank">LinkedIn Profile</a>
+        </div>
+        <div class="social-icons">
+            <a href="mailto:agreen9880@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/austinlgreen/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </section>
+    <footer>
         <p>&copy; 2025 Austin Green. All rights reserved.</p>
     </footer>
 </body>
