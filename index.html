@@ -6,6 +6,8 @@
     <title>Austin Green, PharmD, MPH, BCPS, AAHIVP</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -22,41 +24,7 @@
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            background-color: #003399;
-            padding: 0.8rem;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            transition: color 0.3s ease-in-out;
-        }
-        nav a:hover {
-            color: #ffcc00;
-            text-decoration: underline;
-        }
-        section {
-            padding: 2rem;
-            text-align: center;
-            max-width: 900px;
-            margin: auto;
-        }
         .card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-bottom: 2rem;
             transition: transform 0.3s ease-in-out;
         }
@@ -73,56 +41,61 @@
         #intro img:hover {
             transform: scale(1.1);
         }
-        .social-icons {
-            font-size: 24px;
-            margin-top: 1rem;
-        }
-        .social-icons a {
-            color: #3366cc;
-            margin: 0 10px;
-            transition: color 0.3s;
-        }
-        .social-icons a:hover {
-            color: #ffcc00;
-        }
         footer {
             text-align: center;
             padding: 1rem;
             background-color: #003399;
             color: white;
-            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
-    <header>
+    <header class="mb-4">
         <h1>Austin Green, PharmD, MPH, BCPS, AAHIVP</h1>
     </header>
-    <nav>
-        <a href="#intro"><i class="fas fa-user"></i> About Me</a>
-        <a href="#cv"><i class="fas fa-file-alt"></i> CV</a>
-        <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
-    </nav>
-    <section id="intro" class="card">
-        <img src="headshot.jpg" alt="Austin Green">
-        <h2>About Me</h2>
-        <p>Hello! I'm Austin Green, PharmD, MPH, BCPS, AAHIVP, a healthcare professional passionate about leveraging technology to enhance patient outcomes and drive innovation.</p>
-        <p>With a multidisciplinary background in pharmacy, public health, and data science, I tackle systemic healthcare challenges through AI, analytics, and strategic decision-making.</p>
-        <p>Explore my CV and projects to learn more about my contributions to the field!</p>
-    </section>
-    <section id="cv" class="card">
-    <h2>Curriculum Vitae</h2>
-    <p>Download my CV: <a href="Green_Austin_CV.pdf" download>Green_Austin_CV.pdf</a></p>
-    <iframe src="Green_Austin_CV.pdf" style="width: 100%; height: 100vh; border: none;"></iframe>
-</section>
-    <section id="contact" class="card">
-        <h2>Contact</h2>
-        <p>Let's connect! Feel free to reach out via email or LinkedIn.</p>
-        <div class="social-icons">
-            <a href="mailto:agreen9880@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/austinlgreen/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Austin Green</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#intro"><i class="fas fa-user"></i> About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cv"><i class="fas fa-file-alt"></i> CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </section>
+    </nav>
+    <div class="container">
+        <section id="intro" class="card p-4">
+            <img src="headshot.jpg" alt="Austin Green" class="mx-auto d-block">
+            <h2>About Me</h2>
+            <p>Hello! I'm Austin Green, PharmD, MPH, BCPS, AAHIVP, a healthcare professional passionate about leveraging technology to enhance patient outcomes and drive innovation.</p>
+            <p>With a multidisciplinary background in pharmacy, public health, and data science, I tackle systemic healthcare challenges through AI, analytics, and strategic decision-making.</p>
+            <p>Explore my CV and projects to learn more about my contributions to the field!</p>
+        </section>
+        <section id="cv" class="card p-4">
+            <h2>Curriculum Vitae</h2>
+            <p>Download my CV: <a href="Green_Austin_CV.pdf" download class="btn btn-primary">Green_Austin_CV.pdf</a></p>
+            <iframe src="Green_Austin_CV.pdf" style="width: 100%; height: 100vh; border: none;"></iframe>
+        </section>
+        <section id="contact" class="card p-4 text-center">
+            <h2>Contact</h2>
+            <p>Let's connect! Feel free to reach out via email or LinkedIn.</p>
+            <div class="social-icons">
+                <a href="mailto:agreen9880@gmail.com" class="btn btn-warning"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://www.linkedin.com/in/austinlgreen/" target="_blank" class="btn btn-warning"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </section>
+    </div>
     <footer>
         <p>&copy; 2025 Austin Green. All rights reserved.</p>
     </footer>
