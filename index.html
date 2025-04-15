@@ -16,43 +16,34 @@
             background-color: #f9f9f9;
             color: #333;
         }
-header {
-    background: url('AI and Pharmacy Final.png') center/cover no-repeat;
-    position: relative;
-    color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 400px;
-    padding: 5rem 2rem;
-}
 
-header::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Slightly softer overlay */
-    z-index: -1;
-}
-
-header h1 {
-    font-size: 3.5rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
-}
-
-header p {
-    font-size: 1.5rem;
-    max-width: 700px;
-    margin: 0 auto;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-}
+        header {
+            background: linear-gradient(to bottom, rgba(51, 102, 204, 0.7), rgba(0, 51, 153, 0.9)),
+                        url('AI and Pharmacy Final.png') center/cover no-repeat;
+            position: relative;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 450px;
+            padding: 5rem 2rem;
         }
+
+        header h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+        }
+
+        header p {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+        }
+
         .card {
             background: white;
             border: none;
@@ -60,38 +51,32 @@ header p {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
             margin-bottom: 2rem;
         }
+
         .btn-custom {
-            background: linear-gradient(45deg, #3366cc, #00cc99);
+            background: linear-gradient(45deg, #3366cc, #003399);
             color: white;
             border: none;
             padding: 0.8rem 1.5rem;
             border-radius: 50px;
-            transition: background 0.3s ease;
         }
-        .btn-custom:hover {
-            background: linear-gradient(45deg, #00cc99, #3366cc);
-            color: white;
-        }
+
         .social-icons a {
             font-size: 1.5rem;
             margin: 0 1rem;
             color: #3366cc; /* Blue icons */
-            transition: color 0.3s ease;
         }
-        .social-icons a:hover {
-            color: #003399; /* Darker blue on hover */
-        }
+
         footer {
             background: #003399;
             color: white;
             padding: 2rem 1rem;
+            text-align: center;
         }
+
         footer a {
             color: #ffcc00;
             text-decoration: none;
-        }
-        footer a:hover {
-            color: #ffffff;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -124,8 +109,9 @@ header p {
         <section id="intro" class="card p-4 text-center">
             <img src="headshot.jpg" alt="Austin Green" class="rounded-circle mx-auto" style="width: 150px; border: 4px solid #3366cc;">
             <h2 class="mt-3">About Me</h2>
-            <p>Hello! I'm a healthcare professional passionate about leveraging technology to enhance patient outcomes and drive innovation. With a multidisciplinary background in pharmacy, public health, and data science, I tackle systemic healthcare challenges through AI, analytics, and strategic decision-making.</p>
-            <p>Explore my CV and projects to learn more about my contributions to the field!</p>
+            <p>Hello! I'm Austin Green, a healthcare professional with extensive expertise in pharmacy, public health, and data analytics. My passion lies at the intersection of innovation and patient care, where I leverage technology to address systemic challenges in healthcare. I have a proven record of leadership in guiding multidisciplinary teams, fostering collaboration, and driving impactful initiatives in pharmacy and beyond.</p>
+            <p>Beyond technical proficiency, I am committed to service, having dedicated my career to enhancing healthcare systems and improving lives. I take immense pride in mentoring and inspiring future pharmacists to become leaders in their own right, shaping the next generation of professionals who will continue to innovate and serve their communities with excellence.</p>
+            <p>Explore my portfolio and CV to see how I've contributed to shaping innovative solutions in the field of pharmacy and healthcare.</p>
         </section>
         <section id="cv" class="card p-4 text-center">
             <h2>Curriculum Vitae</h2>
