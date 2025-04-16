@@ -133,7 +133,24 @@
         <option value="project1">Antiretroviral Therapy in Pediatric Patients in Eastern and Southern Africa</option>
         <option value="project2">Discrimination Against People Living with HIV in Eastern and Southern Africa</option>
     </select>
+<script>
+    function showProject() {
+        const selectedProject = document.getElementById('project-menu').value;
+        const project1 = document.getElementById('project1');
+        const project2 = document.getElementById('project2');
 
+        // Hide all projects by default
+        project1.style.display = "none";
+        project2.style.display = "none";
+
+        // Show the selected project
+        if (selectedProject === "project1") {
+            project1.style.display = "block";
+        } else if (selectedProject === "project2") {
+            project2.style.display = "block";
+        }
+    }
+</script>
     <div id="project1" class="project-item">
         <h3>Antiretroviral Therapy in Pediatric Patients in Eastern and Southern Africa</h3>
         
