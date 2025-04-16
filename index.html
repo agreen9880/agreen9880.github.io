@@ -126,40 +126,57 @@
 
         <section id="projects" class="card p-4 text-center">
     <h2>Projects</h2>
-    <h3>Antiretroviral Therapy in Pediatric Patients in Eastern and Southern Africa</h3>
+    
+    <label for="project-menu" class="form-label">Select a Project:</label>
+    <select id="project-menu" class="form-select" onchange="showProject()">
+        <option value="default">-- Select a Project --</option>
+        <option value="project1">Antiretroviral Therapy in Pediatric Patients in Eastern and Southern Africa</option>
+        <option value="project2">Discrimination Against People Living with HIV in Eastern and Southern Africa</option>
+    </select>
 
-    <p>Antiretroviral Therapy (ART) is a life-saving treatment for individuals living with HIV. By using a combination of antiretroviral drugs, ART suppresses the replication of the virus in the body, preventing the progression of HIV into AIDS. For pediatric patients, ART is critically important. Early initiation of ART in children not only reduces mortality and morbidity but also ensures proper growth and development, giving children the opportunity to lead healthier lives.</p>
+    <div id="project1" class="project-item">
+        <h3>Antiretroviral Therapy in Pediatric Patients in Eastern and Southern Africa</h3>
+        
+        <p>Antiretroviral Therapy (ART) is a life-saving treatment for individuals living with HIV. By using a combination of antiretroviral drugs, ART suppresses the replication of the virus in the body, preventing the progression of HIV into AIDS. For pediatric patients, early initiation of ART reduces mortality, prevents developmental complications, and ensures a better quality of life.</p>
 
-    <p>The significance of ART in pediatric care cannot be overstated. Without timely treatment, children living with HIV face a much higher risk of severe infections, developmental delays, and other complications. ART offers hope for improved quality of life, while also contributing to broader public health goals, such as reducing HIV transmission.</p>
+        <p>The World Health Organization (WHO) and UNICEF provide open access data about HIV treatment across countries. This dataset focuses on Eastern and Southern Africa, a region disproportionately affected by HIV/AIDS. However, not all countries report ART treatment data.</p>
 
-    <p>The World Health Organization (WHO) and UNICEF play pivotal roles in monitoring and reporting global health data, including HIV/AIDS treatment coverage. These organizations compile open-access data from various countries to provide insights into the progress and gaps in ART access. By making this data freely available, they aim to drive evidence-based decision-making, inform policy, and foster collaboration among stakeholders working to combat the HIV/AIDS epidemic.</p>
+        <p>Djibouti, Madagascar, Sudan, and Somalia, for example, report ART coverage for pediatric patients below 20%, highlighting systemic barriers such as limited healthcare access and stigma surrounding HIV treatment.</p>
 
-    <p>It is important to note that the data presented does not encompass all countries worldwide. This specific dataset focuses on Eastern and Southern Africa, a region disproportionately affected by the HIV/AIDS epidemic. Many nations in this area face significant challenges in providing equitable access to ART for children, resulting in treatment disparities that demand urgent attention.</p>
+        <div class="project-item">
+            <h4>Pediatric ART Coverage Rates in Eastern and Southern Africa</h4>
+            <p>Coverage remains uneven, with some countries achieving near-universal ART access while others report dangerously low rates.</p>
+            <img src="Percent Peds Receiving ART.png" alt="Percent Peds Receiving ART" class="img-fluid mt-3">
+        </div>
 
-    <p>While some countries have made commendable progress in scaling up pediatric ART coverage, others exhibit alarmingly low rates of treatment. Notably, Djibouti, Madagascar, Sudan, and Somalia have ART coverage rates below 20% for pediatric patients. These low rates highlight the persistent barriers to accessing life-saving treatment, such as limited healthcare infrastructure, stigma, and economic challenges.</p>
+        <div class="project-item">
+            <h4>Cumulative ART Coverage Trends</h4>
+            <p>Between 2017 and 2023, cumulative ART coverage declined from over 650,000 children to just over 500,000, reflecting challenges in sustained treatment efforts.</p>
+            <img src="Cumulative ART.png" alt="Cumulative ART" class="img-fluid mt-3">
+        </div>
 
-    <div class="project-item">
-        <h4>Map of ART Coverage in Eastern and Southern Africa</h4>
-        <p>This map illustrates the region of Africa focused on Eastern and Southern Africa, highlighting disparities in ART coverage among pediatric patients. Countries with higher percentages of children on ART are represented in shades of blue, while those with lower percentages are marked in shades of red. Madagascar stands out as a deep red outlier, indicating critically low ART coverage rates for children.</p>
-        <img src="MapESA.png" alt="Map of Eastern and Southern Africa ART Coverage" class="img-fluid mt-3">
+        <div class="project-item">
+            <h4>ART Distribution by Country</h4>
+            <p>Mozambique and South Africa lead in absolute numbers of pediatric ART recipients. However, Eswatini has the highest percentage of children on ART, nearing universal coverage.</p>
+            <img src="Number vs percent.png" alt="Number vs Percent" class="img-fluid mt-3">
+        </div>
+
+        <div class="project-item">
+            <h4>Map of ART Coverage in Eastern and Southern Africa</h4>
+            <p>This map highlights ART disparities in the region. Countries with higher ART percentages are shown in blue, and those with lower percentages are in red. Madagascar stands out as a deep red outlier, emphasizing the urgent need for intervention.</p>
+            <img src="MapESA.png" alt="Map of Eastern and Southern Africa ART Coverage" class="img-fluid mt-3">
+        </div>
     </div>
 
-    <div class="project-item">
-        <h4>Pediatric ART Coverage Rates in Eastern and Southern Africa</h4>
-        <p>While some countries have made substantial strides, many still have alarming treatment gaps. Djibouti, Madagascar, Sudan, and Somalia have rates of pediatric ART use below 20%, underscoring the urgency for improved treatment accessibility.</p>
-        <img src="Percent Peds Receiving ART.png" alt="Percent Peds Receiving ART" class="img-fluid mt-3">
-    </div>
+    <div id="project2" class="project-item" style="display: none;">
+        <h3>Discrimination Against People Living with HIV in Eastern and Southern Africa</h3>
 
-    <div class="project-item">
-        <h4>Cumulative ART Coverage Trends</h4>
-        <p>Between 2017 and 2023, the cumulative number of children receiving ART in Eastern and Southern Africa exhibited a concerning decline. At its peak in 2017, over 650,000 children were receiving ART; however, this number fell to just over 500,000 children in 2023, signaling potential challenges in sustained treatment efforts.</p>
-        <img src="Cumulative ART.png" alt="Cumulative ART" class="img-fluid mt-3">
-    </div>
+        <p>Discrimination against people living with HIV continues to hinder public health efforts and human rights in Eastern and Southern Africa. Surveys reveal significant percentages of populations with discriminatory attitudes, which negatively impact HIV treatment and prevention programs.</p>
 
-    <div class="project-item">
-        <h4>ART Distribution by Country</h4>
-        <p>Mozambique and South Africa lead in absolute numbers of pediatric ART recipients, but there is still room to increase their percentages of children on ART. Meanwhile, Eswatini boasts one of the highest treatment rates, nearly reaching universal ART coverage among children, though it represents a smaller portion of the population in Eastern and Southern Africa.</p>
-        <img src="Number vs percent.png" alt="Number vs Percent" class="img-fluid mt-3">
+        <p>Studies show that stigma deters individuals from seeking testing, care, and treatment for HIV. Reducing discriminatory attitudes is critical for achieving equitable healthcare and reducing the spread of HIV across communities.</p>
+
+        <p>Using survey data, researchers have measured the levels of stigma in various countries, emphasizing the need for targeted education campaigns to challenge misconceptions about HIV and promote understanding and compassion.</p>
+
     </div>
 </section>
 
